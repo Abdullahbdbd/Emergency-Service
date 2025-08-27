@@ -28,8 +28,7 @@
     <div
       class="nav-container px-8 py-3 md:flex md:justify-between md:items-center"
     >
-
-    <!-- navbar text  -->
+      <!-- navbar text  -->
       <div class="nav-logo-container flex items-center justify-center gap-2">
         <div>
           <img class="w-[40px]" src="./assets/logo.png" alt="" />
@@ -51,9 +50,11 @@
           <button
             class="flex justify-center items-center gap-2 px-6 py-2 rounded-[50px] bg-[#41FF6B1A] font-extrabold"
           >
-            <span id="heart-count">0</span> <img class="w-6" src="./assets/heart.png" alt="" />
+            <span id="heart-count">0</span>
+            <img class="w-6" src="./assets/heart.png" alt="" />
           </button>
         </div>
+
         <div>
           <button
             class="flex justify-center items-center gap-2 px-6 py-2 rounded-[50px] bg-[#41FF6B1A] font-extrabold"
@@ -61,11 +62,12 @@
             <span>100</span> <img class="w-6" src="./assets/coin.png" alt="" />
           </button>
         </div>
+
         <div>
           <button
             class="px-6 py-2 rounded-[50px] bg-[#00A63E] font-bold text-white"
           >
-            2 copy
+            <span id="copy-count">0</span> copy
           </button>
         </div>
       </div>
@@ -91,10 +93,12 @@
     >
       <!-- main left section  -->
       <div
-        class="main-left-container w-[75%] grid md:grid-cols-3 gap-5 mx-auto"
+        class="main-left-container w-[75%] grid md:grid-cols-3 gap-5 mx-auto md:max-h-[510px]"
       >
         <!-- National Emergency card  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
+        <div
+          class="card-body shadow-md bg-[#ffffff] rounded-lg md:max-h-[235px]"
+        >
           <!-- National Emergency card-img-section  -->
           <div class="flex justify-between items-center">
             <img
@@ -119,7 +123,7 @@
             <!-- National Emergency card-button-section  -->
             <div class="flex mt-4 gap-2">
               <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
+                class="copy-count-btn w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -134,7 +138,9 @@
         </div>
 
         <!-- Police Helpline card  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
+        <div
+          class="card-body shadow-md bg-[#ffffff] rounded-lg md:max-h-[235px]"
+        >
           <!-- Police Helpline card-img-section  -->
           <div class="flex justify-between items-center">
             <img
@@ -159,7 +165,7 @@
             <!-- Police Helpline card-button-section  -->
             <div class="flex mt-4 gap-2">
               <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
+                class="copy-count-btn w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -174,7 +180,9 @@
         </div>
 
         <!-- Fire Service card  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
+        <div
+          class="card-body shadow-md bg-[#ffffff] rounded-lg md:max-h-[235px]"
+        >
           <!-- Fire Service card-img-section  -->
           <div class="flex justify-between items-center">
             <img
@@ -199,7 +207,7 @@
             <!-- Fire Service card-button-section  -->
             <div class="flex mt-4 gap-2">
               <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
+                class="copy-count-btn w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -214,7 +222,9 @@
         </div>
 
         <!-- Ambulance Service card  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
+        <div
+          class="card-body shadow-md bg-[#ffffff] rounded-lg md:max-h-[235px]"
+        >
           <!-- Ambulance Service card-img-section  -->
           <div class="flex justify-between items-center">
             <img
@@ -239,7 +249,7 @@
             <!-- Ambulance Service card-button-section  -->
             <div class="flex mt-4 gap-2">
               <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
+                class="copy-count-btn w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -254,7 +264,9 @@
         </div>
 
         <!-- Women & Child Helpline card  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
+        <div
+          class="card-body shadow-md bg-[#ffffff] rounded-lg md:max-h-[235px]"
+        >
           <!-- Women & Child Helpline card-img-section  -->
           <div class="flex justify-between items-center">
             <img
@@ -279,7 +291,7 @@
             <!-- Women & Child Helpline card-button-section  -->
             <div class="flex mt-4 gap-2">
               <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
+                class="copy-count-btn w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -294,7 +306,9 @@
         </div>
 
         <!-- Anti-Corruption Helpline card  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
+        <div
+          class="card-body shadow-md bg-[#ffffff] rounded-lg md:max-h-[235px]"
+        >
           <!-- Anti-Corruption Helpline card-img-section  -->
           <div class="flex justify-between items-center">
             <img
@@ -319,127 +333,7 @@
             <!-- Anti-Corruption Helpline card-button-section  -->
             <div class="flex mt-4 gap-2">
               <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
-              >
-                <i class="fa-regular fa-copy"></i> Copy
-              </button>
-
-              <button
-                class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
-              >
-                <i class="fa-solid fa-phone"></i> Call
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Electricity Helpline section  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
-          <!-- Electricity Helpline card-img-section  -->
-          <div class="flex justify-between items-center">
-            <img
-              class="w-[35px] bg-[#ffe3e2] p-2 rounded-md"
-              src="./assets/emergency.png"
-              alt=""
-            />
-            <i class="fa-regular fa-heart text-base heart"></i>
-          </div>
-          <!-- Electricity Helpline card-body-section  -->
-          <div class="">
-            <h2 class="font-bold text-base">Electricity Helpline</h2>
-            <span class="text-xs text-[#5c5c5c]">Electricity Outage</span>
-
-            <h2 class="font-bold text-xl mt-4">16216</h2>
-            <span
-              class="px-3 py-[2px] rounded-[50px] text-[#5c5c5c] bg-[#f2f2f2] text-xs"
-            >
-              Electricity
-            </span>
-
-            <!-- Electricity Helpline card-button-section  -->
-            <div class="flex mt-4 gap-2">
-              <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
-              >
-                <i class="fa-regular fa-copy"></i> Copy
-              </button>
-
-              <button
-                class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
-              >
-                <i class="fa-solid fa-phone"></i> Call
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Brac Helpline section  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
-          <!-- Brac Helpline card-img-section  -->
-          <div class="flex justify-between items-center">
-            <img
-              class="w-[35px] bg-[#ffe3e2] p-2 rounded-md"
-              src="./assets/emergency.png"
-              alt=""
-            />
-            <i class="fa-regular fa-heart text-base heart"></i>
-          </div>
-          <!-- Brac Helpline card-body-section  -->
-          <div class="">
-            <h2 class="font-bold text-base">Brac Helpline</h2>
-            <span class="text-xs text-[#5c5c5c]">Brac</span>
-
-            <h2 class="font-bold text-xl mt-4">16445</h2>
-            <span
-              class="px-3 py-[2px] rounded-[50px] text-[#5c5c5c] bg-[#f2f2f2] text-xs"
-            >
-              NGO
-            </span>
-
-            <!-- Brac Helpline card-button-section  -->
-            <div class="flex mt-4 gap-2">
-              <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
-              >
-                <i class="fa-regular fa-copy"></i> Copy
-              </button>
-
-              <button
-                class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
-              >
-                <i class="fa-solid fa-phone"></i> Call
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bangladesh Railway Helpline card  -->
-        <div class="card-body shadow-md bg-[#ffffff] rounded-lg">
-          <!-- Bangladesh Railway Helpline  card-img-section  -->
-          <div class="flex justify-between items-center">
-            <img
-              class="w-[35px] bg-[#ffe3e2] p-2 rounded-md"
-              src="./assets/emergency.png"
-              alt=""
-            />
-            <i class="fa-regular fa-heart text-base heart"></i>
-          </div>
-          <!-- Bangladesh Railway Helpline  card-body-section  -->
-          <div class="">
-            <h2 class="font-bold text-base">Bangladesh Railway Helpline</h2>
-            <span class="text-xs text-[#5c5c5c]">Bangladesh Railway </span>
-
-            <h2 class="font-bold text-xl mt-4">163</h2>
-            <span
-              class="px-3 py-[2px] rounded-[50px] text-[#5c5c5c] bg-[#f2f2f2] text-xs"
-            >
-              Travel
-            </span>
-
-            <!-- Bangladesh Railway Helpline  card-button-section  -->
-            <div class="flex mt-4 gap-2">
-              <button
-                class="w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
+                class="copy-count-btn w-[50%] border border-[#d4d6d5] py-1 rounded-md text-[#5c5c5c] text-xs"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -456,7 +350,7 @@
 
       <!-- main right section  -->
       <div class="main-right-container md:w-[25%] mt-10 md:mt-0">
-        <div class="shadow-md bg-[#ffffff] rounded-lg min-h-[767px] px-3 py-4">
+        <div class="shadow-md bg-[#ffffff] rounded-lg min-h-[490px] px-3 py-4">
           <!-- right section text and button  -->
           <div class="flex justify-between">
             <!-- right section text  -->
@@ -476,7 +370,9 @@
           </div>
 
           <!-- right section history   -->
-          <div class="flex justify-between items-center mt-5 bg-[#fafafa] p-2 rounded-lg">
+          <div
+            class="flex justify-between items-center mt-5 bg-[#fafafa] p-2 rounded-lg"
+          >
             <!-- history text  -->
             <div>
               <h2 class="text-sm font-semibold">Fire Service Number</h2>
