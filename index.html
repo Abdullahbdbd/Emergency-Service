@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service</title>
+
+    <!-- tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div
+      class="nav-container px-8 py-3 md:flex md:justify-between md:items-center"
+    >
+      <div
+        class="nav-logo-container flex items-center justify-center gap-2 "
+      >
+        <div>
+          <img class="w-[40px]" src="./assets/logo.png" alt="" />
+        </div>
+
+        <div>
+          <p class="text-[#006747] font-extrabold text-sm">
+            Emergency <br />
+            Service
+          </p>
+        </div>
+      </div>
+
+      <div class="nav-button-container mt-5 md:mt-0 flex items-center justify-center gap-5">
+        <div>  
+          <button class="flex justify-center items-center gap-2 px-6 py-2 rounded-[50px] bg-[#41FF6B1A] font-extrabold">
+            <span>0</span> <img class="w-6" src="./assets/heart.png" alt="" />
+          </button>
+        </div>
+        <div>
+          <button class="flex justify-center items-center gap-2 px-6 py-2 rounded-[50px] bg-[#41FF6B1A] font-extrabold">
+            <span>100</span> <img class="w-6" src="./assets/coin.png" alt="" />
+          </button>
+        </div>
+        <div>
+          <button class="px-6 py-2 rounded-[50px] bg-[#00A63E] font-bold text-white">2 copy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="home.js"></script>
+  </body>
+</html>
