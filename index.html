@@ -59,7 +59,7 @@
           <button
             class="flex justify-center items-center gap-2 px-6 py-2 rounded-[50px] bg-[#41FF6B1A] font-extrabold"
           >
-            <span>100</span> <img class="w-6" src="./assets/coin.png" alt="" />
+            <span id="coin-count">100</span> <img class="w-6" src="./assets/coin.png" alt="" />
           </button>
         </div>
 
@@ -111,8 +111,8 @@
           </div>
           <!-- National Emergency card-body-section  -->
           <div class="">
-            <h2 class="font-bold text-base">National Emergency Number</h2>
-            <span class="text-xs text-[#5c5c5c]"> National Emergency </span>
+            <h2 id="N-E-STital" class="font-bold text-base">National Emergency Number</h2>
+            <span id="N-E-Sn" class="text-xs text-[#5c5c5c]"> National Emergency </span>
 
             <h2  id="N-E-HL-Num" class="font-bold text-xl mt-4">999</h2>
             <span
@@ -131,6 +131,7 @@
               </button>
 
               <button
+              id="N-E-CallBtn"
                 class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
               >
                 <i class="fa-solid fa-phone"></i> Call
@@ -154,8 +155,8 @@
           </div>
           <!-- Police Helpline card-body-section  -->
           <div class="">
-            <h2 class="font-bold text-base">Police Helpline Number</h2>
-            <span class="text-xs text-[#5c5c5c]">Police</span>
+            <h2 id="P-H-STital" class="font-bold text-base">Police Helpline Number</h2>
+            <span id="P-H-Sn" class="text-xs text-[#5c5c5c]">Police</span>
 
             <h2  id="P-H-HL-Num" class="font-bold text-xl mt-4">999</h2>
             <span
@@ -174,6 +175,7 @@
               </button>
 
               <button
+              id="P-H-CallBtn"
                 class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
               >
                 <i class="fa-solid fa-phone"></i> Call
@@ -197,8 +199,8 @@
           </div>
           <!-- Fire Service card-body-section  -->
           <div class="">
-            <h2 class="font-bold text-base">Fire Service Number</h2>
-            <span class="text-xs text-[#5c5c5c]">Fire Service</span>
+            <h2 id="F-S-STital" class="font-bold text-base">Fire Service Number</h2>
+            <span id="F-S-Sn" class="text-xs text-[#5c5c5c]">Fire Service</span>
 
             <h2  id="F-S-HL-Num" class="font-bold text-xl mt-4">999</h2>
             <span
@@ -217,6 +219,7 @@
               </button>
 
               <button
+              id="F-S-CallBtn"
                 class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
               >
                 <i class="fa-solid fa-phone"></i> Call
@@ -240,8 +243,8 @@
           </div>
           <!-- Ambulance Service card-body-section  -->
           <div class="">
-            <h2 class="font-bold text-base">Ambulance Service</h2>
-            <span class="text-xs text-[#5c5c5c]">Ambulance</span>
+            <h2 id="A-S-STital" class="font-bold text-base">Ambulance Service</h2>
+            <span id="A-S-Sn" class="text-xs text-[#5c5c5c]">Ambulance</span>
 
             <h2  id="A-S-HL-Num" class="font-bold text-xl mt-4">1994-999999</h2>
             <span
@@ -260,6 +263,7 @@
               </button>
 
               <button
+              id="A-S-CallBtn"
                 class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
               >
                 <i class="fa-solid fa-phone"></i> Call
@@ -283,8 +287,8 @@
           </div>
           <!-- Women & Child Helpline card-body-section  -->
           <div class="">
-            <h2 class="font-bold text-base">Women & Child Helpline</h2>
-            <span class="text-xs text-[#5c5c5c]">Women & Child Helpline</span>
+            <h2 id="W-C-STital" class="font-bold text-base">Women & Child Helpline</h2>
+            <span id="W-C-Sn" class="text-xs text-[#5c5c5c]">Women & Child Helpline</span>
 
             <h2  id="W-C-HL-Num" class="font-bold text-xl mt-4">109</h2>
             <span
@@ -303,6 +307,7 @@
               </button>
 
               <button
+              id="W-C-CallBtn"
                 class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
               >
                 <i class="fa-solid fa-phone"></i> Call
@@ -326,8 +331,8 @@
           </div>
           <!-- Anti-Corruption Helpline card-body-section  -->
           <div class="">
-            <h2 class="font-bold text-base">Anti-Corruption Helpline</h2>
-            <span class="text-xs text-[#5c5c5c]">Anti-Corruption</span>
+            <h2 id="A-C-STital" class="font-bold text-base">Anti-Corruption Helpline</h2>
+            <span id="A-C-Sn" class="text-xs text-[#5c5c5c]">Anti-Corruption</span>
 
             <h2  id="A-C-HL-Num" class="font-bold text-xl mt-4">106</h2>
             <span
@@ -346,6 +351,7 @@
               </button>
 
               <button
+              id="A-C-CallBtn"
                 class="w-[50%] bg-[#00a63e] py-1 rounded-md text-white text-xs"
               >
                 <i class="fa-solid fa-phone"></i> Call
@@ -369,6 +375,7 @@
             <!-- right section button  -->
             <div>
               <button
+              id="clear-btn"
                 class="bg-[#00a63e] py-2 px-7 rounded-2xl text-white text-xs"
               >
                 Clear
@@ -377,19 +384,8 @@
           </div>
 
           <!-- right section history   -->
-          <div
-            class="flex justify-between items-center mt-5 bg-[#fafafa] p-2 rounded-lg"
-          >
-            <!-- history text  -->
-            <div>
-              <h2 class="text-sm font-semibold">Fire Service Number</h2>
-              <p class="text-xs text-[#5c5c5c]">999</p>
-            </div>
-            <!-- history time  -->
-            <div>
-              <p class="text-xs text-[#111111]">11:36:58 AM</p>
-            </div>
-          </div>
+           <div id="history-data-section">
+           </div>
         </div>
       </div>
     </div>
