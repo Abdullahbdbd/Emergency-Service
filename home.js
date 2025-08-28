@@ -23,3 +23,24 @@ copyCountBtn.addEventListener('click',
     }
 )   
 }
+
+// copy modal section 
+
+function copyBtnClick(btnID, numId){
+    document.getElementById(btnID).addEventListener('click',
+    function(){
+        const hlNum = document.getElementById(numId).innerText;
+        alert("The number has been copied: " + hlNum) ;
+         navigator.clipboard.writeText(hlNum);
+        return hlNum;   
+    }
+)
+}
+copyBtnClick('N-E-CopyBtn', 'N-E-HL-Num');
+copyBtnClick('P-H-CopyBtn', 'P-H-HL-Num');
+copyBtnClick('F-S-CopyBtn', 'F-S-HL-Num');
+copyBtnClick('A-S-CopyBtn', 'A-S-HL-Num');
+copyBtnClick('W-C-CopyBtn', 'W-C-HL-Num');
+copyBtnClick('A-C-CopyBtn', 'A-C-HL-Num');
+
+
