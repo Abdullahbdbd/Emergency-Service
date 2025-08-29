@@ -1,46 +1,41 @@
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-
 Ans:
 
-getElementById("id") -শুধু একটিমাত্র element ফেরত দেয় (id unique হয়)
+getElementById("id") - returns only one element (id is unique)
+getElementsByClassName("class") - returns multiple elements 
+erySelector("selector") returns the first matching element 
+querySelectorAll("selector") - returns all elements
 
-getElementsByClassName("class") - একাধিক element ফেরত দেয় 
 
-querySelector("selector")  প্রথম মিলে যাওয়া element ফেরত দেয় 
-
-querySelectorAll("selector") - সব element ফেরত দেয় 
 
 2. How do you **create and insert a new element into the DOM**?
-
 Ans:
 
-প্রথমে document.createElement দিয়ে একটি div তৈরি করতে হবে, তারপর innerText দিয়ে তার ভিতরে text add
- করতে হবে, তারপর appendChild() দিয়ে ওই div টাকে add করতে হবে|যেমন:
+First you need to create a div with document.createElement, then add text inside it with innerText, then add that div with appendChild() | For example:
 
 let div = document.createElement("div");
-div.innerText = "Hello World";  
+div.innerText = "Hello World"; 
 document.body.appendChild(div);
 
-3. What is **Event Bubbling** and how does it work?
 
+3. What is **Event Bubbling** and how does it work?
 Ans:
 
-যখন কোনো child element-এ event ঘটে, সেটি parent পর্যন্ত উপরে উঠতে থাকে।
+When an event occurs on a child element, it propagates up to the parent.
+For example: the event propagates from button > div > body.
 
-যেমন: button > div > body পর্যন্ত event ছড়ায়।
+
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
-
 Ans:
 
-Parent element-এ একটাই event listener বসিয়ে, তার child element-এর event গুলো হ্যান্ডেল করা।
+By placing a single event listener on the parent element, it handles the events of its child elements.
+==> Useful because: Performance is better and works on dynamic elements.
 
-==> Useful কারণ: performance ভালো হয় এবং dynamic element-এ কাজ করে।
+
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
 Ans:
 
-preventDefault() element-এর default কাজ বন্ধ করে 
-
-stopPropagation() event-কে parent element-এ যেতে বাধা দেয় 
+preventDefault() stops the default behavior of the element and 
+stopPropagation() prevents the event from going to the parent element.
